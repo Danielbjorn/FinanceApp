@@ -1,0 +1,131 @@
+
+
+
+<!-- HEADER IS HERE (from partial _header.html.erb) -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+
+
+
+
+  <div class="container-fluid">
+
+  	<!----------------------------  THIS IS THE NAVBAR BRAND  ------------------------------------------------------>
+
+
+    <%= link_to 'Capital', root_path, class: "navbar-brand" %> 
+    
+    
+
+      <!----------------------------  THIS IS THE NAVBAR LIST  ------------------------------------------------------>	
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+        <li class="nav-item">
+          <%= link_to 'Books', books_path, class: "navbar-brand" %>  
+        </li>
+
+        <li class="nav-item">
+        	<%= link_to 'Crypto', root_path, class: "navbar-brand" %> <!-- change root_path to correct route  -->  
+        </li>
+
+        <li class="nav-item">
+        	<%= link_to 'Portfolio', root_path, class: "navbar-brand" %> <!-- change root_path to correct route  -->
+        </li>
+
+        
+
+
+        <!----------------------------  THIS IS DEVISE STUFF ------------------------------------------------------>  
+
+        <% if user_signed_in? %>
+
+          <li class="nav-item">
+            <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "navbar-brand" %> <!--  THIS ONE IS DIFFERENT -->
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Edit Profile', edit_user_registration_path, class: "navbar-brand" %> 
+          </li>
+
+        <% else %>
+
+          <li class="nav-item">
+            <%= link_to 'Join', new_user_registration_path, class: "navbar-brand" %> 
+          </li>
+
+          <li class="nav-item">
+            <%= link_to 'Sign In', new_user_session_path, class: "navbar-brand" %> 
+          </li>
+
+        <% end %>
+
+        
+
+        
+
+      </ul>
+
+      
+
+      <!----------------------------  THIS IS THE NAVBAR SEARCH-BAR ------------------------------------------------------>
+
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+<!----------------------- THIS IS DROP DOWN NAVLINK BOOTSTRAP ------------------------------------>
+
+<!--  <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+
+
+
+<!----------------------- THIS IS DISABLED NAVLINK BOOTSRAP ------------------------------------>
+<!-- <li class="nav-item">
+          <a class="nav-link disabled" id="disabled-navlink" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+
+
+
+
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+-->
