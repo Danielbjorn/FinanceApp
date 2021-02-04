@@ -1,24 +1,11 @@
-# README
+# FinanceApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is meant to support financial independance of individuals that want to 
 
-Things you may want to cover:
+*get out of debt
 
-* Ruby version
+*become financially independant
 
-* System dependencies
+*become financially wealthy
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*continue to keep wealth throughout long periods of time
