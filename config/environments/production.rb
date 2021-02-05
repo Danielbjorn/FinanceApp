@@ -1,3 +1,5 @@
+
+
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
@@ -17,7 +19,21 @@ Rails.application.configure do
   config.active_support.disallowed_deprecation = :log
   config.active_support.disallowed_deprecation_warnings = []
   config.log_formatter = ::Logger::Formatter.new
-   config.active_record.dump_schema_after_migration = false
+  config.active_record.dump_schema_after_migration = false
+
+
+  config.paperclip_defaults = {
+
+      storage: :s3,
+      s3_credentials: {
+        bucket: ENV.fetch('S3_BUCKET_NAME'),
+        access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+        secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),  
+        s3_region: ENV.fetch('AWS_REGION'),
+      }
+  }
+
+
 
     if ENV["RAILS_LOG_TO_STDOUT"].present?
       logger           = ActiveSupport::Logger.new(STDOUT)
@@ -33,15 +49,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'phanteks.herokuapp.com' }
 
-    config.paperclip_defaults = {
-      storage: :s3,
-      s3_credentials: {
-        bucket: ENV.fetch('S3_BUCKET_NAME'),
-        access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
-        secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),  
-        s3_region: ENV.fetch('AWS_REGION'),
-      }
-    }
+  
 
   #Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-7.0.10-Q16-HDRI"
 
