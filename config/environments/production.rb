@@ -42,7 +42,7 @@ Rails.application.configure do
         s3_region: ENV.fetch('AWS_REGION'),
     }
 
-  Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-7.0.10-Q16-HDRI"
+  #Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-7.0.10-Q16-HDRI"
 
 
 end
