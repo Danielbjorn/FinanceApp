@@ -40,7 +40,8 @@ Rails.application.configure do
         access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
         secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
         s3_region: ENV.fetch('AWS_REGION'),
-    }
+        }
+      }
 
   #Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-7.0.10-Q16-HDRI"
 
