@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+
+<p>
+	<%= image_tag @book.image.url %> <!-- This ebr is to show images from paperclip -->
+</p>
+
+
 <p>
   <strong>Title:</strong>
   <%= @book.title %>

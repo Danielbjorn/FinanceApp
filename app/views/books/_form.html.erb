@@ -3,9 +3,7 @@
 
 <!------------- THIS PAGE CONTROLS MOST/ALL OTHER html.erb PAGES IN THE books view FOLDER -->
 
-
-
-<%= form_with(model: book) do |form| %>
+<<%= form_with(model: book, html: { multipart: true }) do |form| %>
   <% if book.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
@@ -19,37 +17,53 @@
   <% end %>
 
 
-  <!-------------------- To add 'form.text_field' in to the field use: placeholder: "text" -->
+      <!--------------------------- Main fields----------------------------->
+
+      <div class="field">
+        <%= form.label :title %>
+        <%= form.text_field :title %>
+      </div>
+
+      <div class="field">
+        <%= form.label :author %>
+        <%= form.text_field :author %>
+      </div>
+
+      <div class="field">
+        <%= form.label :rating %>
+        <%= form.text_field :rating %>
+      </div>
+
+      <div class="field">
+        <%= form.label :review %>
+        <%= form.text_area :review %>
+      </div>
 
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+      <!--------------------------- Choose Image field---------------------------->
 
-  <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
-  </div>
 
-  <div class="field">
-    <%= form.label :rating %>
-    <%= form.text_field :rating %>
-  </div>
-
-  <div class="field">
-    <%= form.label :review %>
-    <%= form.text_area :review %>
-  </div>
-
-  <div class="field">  <!---------------------- This is hidden and manually added as 'index' ------------------>
-    <%= form.number_field:user_id, id: :friend_user_id, value: current_user.id, type: :hidden %>
-  </div>
+      <div class = "field form-group">
+        <%= form.label :image %>
+        <%= form.file_field :image %>
+      </div>
 
 
 
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  
+      <!----------------- This is hidden and manually added as 'index' ---------------->
+      
+
+      <div class="field">  
+        <%= form.number_field:user_id, id: :friend_user_id, value: current_user.id, type: :hidden %>
+      </div>
+
+
+
+
+      <div class="actions">
+        <%= form.submit %>
+      </div>
+
 <% end %>
