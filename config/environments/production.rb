@@ -124,6 +124,11 @@ Rails.application.configure do
   # --------------------------------- THIS IS HOW PAPERCLIP ASSIGNS IMAGES TO AWS S3 !!!!!!!!!!! -------------------------------------------
 
   
+  
+
+
+  config.action_mailer.default_url_options = { host: 'phanteks.herokuapp.com' }
+
   config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {
@@ -133,8 +138,5 @@ Rails.application.configure do
       s3_region: ENV.fetch('AWS_REGION'),
   }
 
-
-
-  config.action_mailer.default_url_options = { host: 'phanteks.herokuapp.com' }
 
 end
