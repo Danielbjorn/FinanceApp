@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<%= image_tag(@book.image) %>
+<%= image_tag @book.image.variant(resize: '100x100').processed %>
 
 <p>
   <strong>Title:</strong>

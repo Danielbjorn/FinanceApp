@@ -18,7 +18,9 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'paperclip', '~> 6.1'
 
 
+gem 'image_processing', '~> 1.2'
 gem "aws-sdk-s3", require: false
+gem 'active_storage_validations'
 
 
 
