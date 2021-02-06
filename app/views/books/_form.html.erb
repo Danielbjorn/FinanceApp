@@ -3,7 +3,7 @@
 
 <!------------- THIS PAGE CONTROLS MOST/ALL OTHER html.erb PAGES IN THE books view FOLDER -->
 
-<<%= form_with(model: book, html: { multipart: true }) do |form| %>
+<%= form_with(model: book) do |form| %>
   <% if book.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
