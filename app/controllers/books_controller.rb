@@ -23,7 +23,7 @@ class BooksController < ApplicationController
 
 
   def create
-    #@book = Book.new(book_params)
+
     @book = current_user.books.build(book_params)
 
     respond_to do |format|

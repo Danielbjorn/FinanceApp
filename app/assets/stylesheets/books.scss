@@ -1,3 +1,75 @@
-// Place all the styles related to the books controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.New-Book-btn {
+   
+
+   margin-top: -10px;
+   text-align: center;
+   position: relative;
+   height: 40px;
+   width: auto;
+   padding: 15px;
+   background: rgb(46,62,78);
+   background: linear-gradient(90deg, 
+   rgba(46,62,78,1) 0%, rgba(41,72,93,1) 20%, 
+   rgba(33,63,89,1) 37%, rgba(19,65,94,1) 48%, 
+   rgba(18,65,97,1) 53%, rgba(94,120,150,1) 76%, 
+   rgba(57,114,139,1) 100%);
+}
+
+.div.New-Book-btn:hover {
+   cursor: hand;
+   cursor: pointer;
+   opacity: .9;
+}
+
+
+.New-book-btn-link {
+	color: white;
+	padding: 7.5px;
+	display: inline-block;
+	text-decoration: none;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+
+
+}
+
+.Books-container {
+   margin-top: 2%;
+   margin-left: 5%;
+   
+}
+
+.Book-image img {
+	
+	height: 350px;
+	width: auto;
+	float: left;
+	padding: 8px;
+   border-radius: 18px;
+
+
+}
+
+.Book-image-show img {
+
+ 	height: 700px;
+	width: auto;
+   left: 30%;
+   top: 10%;
+   position: absolute;
+   
+}
+
+.Show-info {
+
+	float:right;
+	margin-right: 35%;
+	margin-top: 15%;
+
+}
+

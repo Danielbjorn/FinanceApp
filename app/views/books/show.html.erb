@@ -1,27 +1,43 @@
-<p id="notice"><%= notice %></p>
 
 
-<%= image_tag @book.image %>
+<div class = "Book-image-show">
+	<%= image_tag @book.image %>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
+<div class = "Show-info">
 
-<p>
-  <strong>Rating:</strong>
-  <%= @book.rating %>
-</p>
+	<p>
+	  <strong>Title:</strong>
+	  <%= @book.title %>
+	</p>
 
-<p>
-  <strong>Review:</strong>
-  <%= @book.review %>
-</p>
+	<p>
+	  <strong>Author:</strong>
+	  <%= @book.author %>
+	</p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+	<p>
+	  <strong>Rating:</strong>
+	  <%= @book.rating %>
+	</p>
+
+	<p>
+	  <strong>Review:</strong>
+	  <%= @book.review %>
+	</p>
+
+	
+
+</div>
+
+
+
+<div class = "Show-btns">
+
+	<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-dark" %> 
+	<%= link_to 'Back', books_path, class: "btn btn-dark"  %>
+	<%= link_to 'delete', @book, method: :delete, data: { comfirm: 'Are you sure' }, class: "btn btn-danger" %> 
+
+
+</div>

@@ -21,7 +21,7 @@
 
       <div class="field">
         <%= form.label :title %>
-        <%= form.text_field :title %>
+        <%= form.text_field :title%>
       </div>
 
       <div class="field">
@@ -44,8 +44,8 @@
 
 
       <div class = "field form-group">
-        <%= form.label :image %>
-        <%= form.file_field :image %>
+        <%= form.label :image, placeholder: "Title" %>
+        <%= form.file_field :image, required: true %>
       </div>
 
 

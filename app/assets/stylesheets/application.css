@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+
+html, body {
+
+	margin-left: 0;
+	background: rgb(46,62,78);
+	background: linear-gradient(90deg, 
+	rgba(46,62,78,1) 0%, rgba(41,72,93,1) 20%, 
+	rgba(33,63,89,1) 37%, rgba(19,65,94,1) 48%, 
+	rgba(18,65,97,1) 53%, rgba(94,120,150,1) 76%, 
+	rgba(57,114,139,1) 100%);
+
+}
