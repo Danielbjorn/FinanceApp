@@ -23,8 +23,8 @@ gem "aws-sdk-s3", require: false
 gem 'active_storage_validations'
 
 
-
-
+#HANDLES API'S
+gem 'platform-api'
 
 
 
