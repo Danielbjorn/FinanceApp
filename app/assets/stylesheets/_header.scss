@@ -3,76 +3,79 @@
 
 .container-fluid {
 
-	margin-top: 1.5%;
+	position: relative;
 	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+  	font-weight: bold;
+  	margin-top: 3%;
+  	
+  	
+
 }
 
 
-.Navbar-ul {
+.Navbar-ul  {
 
+	
+	height: 50px;
 	list-style-type: none;
- 	margin-left: -12px;
- 	margin-right: -12px;
-	padding: 0;
 	overflow: hidden;
-	background: rgb(46,62,78);
-	background: linear-gradient(90deg, 
-	rgba(46,62,78,1) 0%, rgba(41,72,93,1) 20%, 
-	rgba(33,63,89,1) 37%, rgba(19,65,94,1) 48%, 
-	rgba(18,65,97,1) 53%, rgba(94,120,150,1) 76%, 
-	rgba(57,114,139,1) 100%);
+	background: #F2F3F4 ;
+	padding: 0;
+	margin: 0px 0px 0px;
+	justify-content: bottom;
+	
 
 }
 
 .Navbar-li  {
-
-
-
+	
+	
 	float: left;
 	
 
 }
 
 .Navbar-li-devise {
+	
 	float: right;
-	padding-right: 20px;
+	
 }
 
 .Navbar-item {
+  
+  
+  height: 200px;
+  width: auto;
 
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+  color: black;
+  padding-left: 15px;
+  margin-top: 200px;
   text-decoration: none;
-
-
-}
-
-.Devise-item {
-
-	text-align: right;
+  
 
 }
 
-#BTC-Nav-logo {
 
-	height: 20px;
-	width: 20px;
-	background-size: contain;
-
-
-}
 
 hr {
 
-	display: block;
-    height: 10px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 1;
-    background-color: white;
 
+	height: 4px;
+  
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+    
+    
 
+}
+
+.Navbar-logo img {
+	float: top;
+	height: 50px;
+	width: auto;
+	margin-top: 0px;
+}
+
+a.Navbar-item {
+	margin-top: 10px;
 }

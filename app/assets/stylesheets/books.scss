@@ -2,30 +2,27 @@
 
 .New-Book-btn {
    
-
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
    margin-top: -10px;
    text-align: center;
    position: relative;
    height: 40px;
    width: auto;
    padding: 15px;
-   background: rgb(46,62,78);
-   background: linear-gradient(90deg, 
-   rgba(46,62,78,1) 0%, rgba(41,72,93,1) 20%, 
-   rgba(33,63,89,1) 37%, rgba(19,65,94,1) 48%, 
-   rgba(18,65,97,1) 53%, rgba(94,120,150,1) 76%, 
-   rgba(57,114,139,1) 100%);
+   background-color: white;
 }
 
 .div.New-Book-btn:hover {
    cursor: hand;
    cursor: pointer;
    opacity: .9;
+   text-decoration: none;
 }
 
 
 .New-book-btn-link {
-	color: white;
+	color: black;
 	padding: 7.5px;
 	display: inline-block;
 	text-decoration: none;
@@ -40,13 +37,14 @@
 
 .Books-container {
    margin-top: 2%;
-   margin-left: 5%;
+   margin-left: 2.5%;
+
    
 }
 
 .Book-image img {
 	
-	height: 350px;
+	height: 300px;
 	width: auto;
 	float: left;
 	padding: 8px;

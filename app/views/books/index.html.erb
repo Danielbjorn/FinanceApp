@@ -1,36 +1,37 @@
 
 
 
-<div class = "Books-container">
+
 	
+<div class = "Books-container">
 
 
-
-<% if user_signed_in? %>
-
-  <div class = "New-Book-btn">
-    <%= link_to 'New Book', new_book_path, class: "New-book-btn-link" %>
-  </div>
-
-    <% @books.each do |book| %>
-
-
-      <div class = "Book-image">
-        <%= link_to image_tag(book.image), book, class: "Book-image-item" %>
-      </div>
-
-       
-        
-
+  <% if user_signed_in? %>
 
   
-      
-      
 
-    <% end %>
+    <div class = "New-Book-btn">
+      <%= link_to 'New Book', new_book_path, class: "New-book-btn-link" %>
+    </div>
+
+      <% @books.each do |book| %>
 
 
-   
+    <div class = "Book-image">
+        <%= link_to image_tag(book.image), book, class: "Book-image-item" %>
+    </div>
+
+         
+          
+
+
+    
+        
+ 
+
+  <% end %>
+
+ </div>
 
 <% else %>
 
@@ -39,7 +40,7 @@
 <% end %>
 
 
-</div>
+
 
 <br>
 
