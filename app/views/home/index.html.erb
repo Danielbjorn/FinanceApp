@@ -11,13 +11,17 @@
 
 	<% for x in @news["Data"] %>
 
-		<img src = " <%= x["imageurl"] %>" width ="500"> <br>
+		<div class="crypto-images">
 
-		<strong> <%= x["title"] %> </strong> <br>
+			<img src = " <%=  x["imageurl"] %>"> 
+			<strong class="caption"> <%= x["title"] %> </strong>
+			<a class = "read-more", href = "<%= x["url"] %>">  Read Full Article..  </a>
+	
+		</div>
+		
 
-		<%= x["body"] %> <br><br>
-
-	    <a href = "<%= x["url"] %>">  Read More.. <br><hr><br><br> </a>
+		
+	    
 
 
 	<% end %>
