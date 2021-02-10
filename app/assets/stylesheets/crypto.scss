@@ -4,6 +4,7 @@
 .Crypto-container {
 
 	float: left;
+	
 }
 
 
@@ -13,6 +14,8 @@
     display: inline-block;
     text-align: center;
     width: 300px;
+
+
     margin-bottom: 25px;
 
   
@@ -22,7 +25,7 @@
 
 	width: 300px;
 	height: auto;
-	max-height: 250px;
+	max-height: 220px;
 
 
 }
@@ -46,5 +49,8 @@
 	font-size: 10px;
 	color: #AC5A5B;
 	background-color: #464646 ;
+	text-align: left;
+	padding: 3px;
+
 }
 
