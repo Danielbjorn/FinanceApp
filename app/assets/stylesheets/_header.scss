@@ -24,6 +24,7 @@
 	padding: 0;
 	margin: 0px 0px 0px;
 	justify-content: bottom;
+	margin-right: 30px
 	
 
 }
@@ -39,7 +40,7 @@
 .Navbar-li-devise {
 	
 	float: right;
-	
+
 }
 
 .Navbar-item {
@@ -71,9 +72,10 @@ hr {
 
 .Navbar-logo img {
 	float: top;
-	height: 50px;
+	height: 25px;
 	width: auto;
 	margin-top: 0px;
+	margin-left: 100px;
 }
 
 a.Navbar-item {
