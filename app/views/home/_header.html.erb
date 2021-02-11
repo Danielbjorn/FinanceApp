@@ -19,14 +19,20 @@
 
 
           <li class = "Navbar-li" >
-
-            <%= link_to image_tag("logo.png"), root_path, class: "Navbar-logo" %>
-            
+            <%= link_to image_tag("logo2.png"),  root_path, class: "Navbar-logo" %> 
           </li>
 
           <li class = "Navbar-li" >
-            <%= link_to 'Books', books_path, class: "Navbar-item"  %>  
+            <%= link_to image_tag("bitcoinlogo.png") , root_path, class: "Navbar-logo"  %> 
           </li>
+
+          <li class = "Navbar-li" >
+            <%= link_to image_tag("Bookslogo.png") , books_path, class: "Navbar-logo"  %> 
+          </li>
+
+          
+
+
 
       
 
@@ -38,22 +44,25 @@
 
           <% if user_signed_in? %>
 
+          
+
             <li class = "Navbar-li-devise" >
-              <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "Navbar-item Devise-item" %> <!--  THIS ONE IS DIFFERENT -->
+              <%= link_to image_tag("logout.png") ,destroy_user_session_path, method: :delete, class: "Navbar-devise-logo"  %> 
             </li>
 
             <li class = "Navbar-li-devise" >
-              <%= link_to 'Edit Profile', edit_user_registration_path, class: "Navbar-item Devise-item" %> 
+              <%= link_to image_tag("editprofile.png"), edit_user_registration_path, class: "Navbar-devise-logo"  %> 
             </li>
 
+      
           <% else %>
 
             <li class = "Navbar-li-devise" >
-              <%= link_to 'Join', new_user_registration_path, class: "Navbar-item Devise-item"  %> 
+              <%= link_to image_tag("signup.png"), new_user_registration_path, class: "Navbar-devise-logo"  %> 
             </li>
 
             <li class = "Navbar-li-devise" >
-              <%= link_to 'Sign In', new_user_session_path, class: "Navbar-item Devise-item"  %> 
+              <%= link_to image_tag("signin.jpg"), new_user_session_path, class: "Navbar-devise-logo"  %> 
             </li>
 
         <% end %>
@@ -73,27 +82,20 @@
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
 
-    </div>
 
-    <hr size = "1" noshade>
+    <hr size="1">
+
+    </div>
 
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </nav>
+
+
+
+
+  
+
 
 
 

@@ -7,24 +7,23 @@
 	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
   	font-weight: bold;
-  	margin-top: 3%;
+  	margin-top: 1%;
   	
-  	
+
 
 }
-
 
 .Navbar-ul  {
 
 	
-	height: 50px;
+	height: 32px;
 	list-style-type: none;
 	overflow: hidden;
 	background: #F2F3F4 ;
 	padding: 0;
 	margin: 0px 0px 0px;
-	justify-content: bottom;
-	margin-right: 30px
+
+	
 	
 
 }
@@ -40,44 +39,52 @@
 .Navbar-li-devise {
 	
 	float: right;
+	margin-right: 20px;
 
 }
 
 .Navbar-item {
   
   
-  height: 200px;
-  width: auto;
-
+  
+  text-decoration: none;
+  display: block;
   color: black;
   padding-left: 15px;
-  margin-top: 200px;
-  text-decoration: none;
+  
   
 
 }
-
 
 
 hr {
 
-
-	height: 4px;
-  
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-    
-    
-
+	height: 3px;
+	color: black;
+	background-color: #ccc;
+	border: none;
+	margin: 0px 0px;
 }
+    
+
+
 
 .Navbar-logo img {
-	float: top;
-	height: 25px;
+
+	display: block;
+	float: left;
+	height: 32px;
 	width: auto;
 	margin-top: 0px;
-	margin-left: 100px;
+	padding-left: 20px;
 }
 
-a.Navbar-item {
-	margin-top: 10px;
+.Navbar-devise-logo img {
+
+	display: block;
+	height: 32px;
+	width: auto;
+	margin-top: 0px;
+	padding-left: 10px;
+
 }
