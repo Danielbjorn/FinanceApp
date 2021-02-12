@@ -1,32 +1,4 @@
 
 
 
-<% @news["Data"] %>
- 
-
-	
-	<div class = "Crypto-container">
-	
-
-
-	<% for x in @news["Data"] %>
-
-		<div class="crypto-images">
-
-			<img src = " <%=  x["imageurl"] %>"> 
-			<strong class="caption"> <%= x["title"] %> </strong>
-			<a class = "read-more", href = "<%= x["url"] %>">  Read Full Article from <strong> <%= x["source"] %></strong> </a>
-		
-	
-		</div>
-		
-
-		
-	    
-
-
-	<% end %>
-
-
-	</div>
 

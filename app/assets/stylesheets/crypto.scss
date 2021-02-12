@@ -4,6 +4,8 @@
 .Crypto-container {
 
 	float: left;
+	height: 300px;
+	width: auto;
 
 }
 
@@ -24,20 +26,25 @@
 .crypto-images img {
 
 	width: 300px;
-	height: auto;
+	height: 200px;
 	max-height: 220px;
+	border-radius: 10px;
 
 
 }
 
 .caption {
+
 	display: block;
 	width: 300px;
+	height: 50px;
 	text-align: left;
 	font-size: 12px;
 	background-color: black;
 	color: white;
 	padding: 2%;
+	margin-top: 2px;
+	border-radius: 5px;
 
 }
 
@@ -49,9 +56,10 @@
 	margin-top: 1px;
 	font-size: 10px;
 	color: #AC5A5B;
-	background-color: #464646 ;
+	background-color: #292626  ;
 	text-align: left;
 	padding: 3px;
+	border-radius: 5px;
 
 }
 
