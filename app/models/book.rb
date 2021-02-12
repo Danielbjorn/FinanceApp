@@ -10,6 +10,7 @@ class Book < ApplicationRecord
 
 
 	has_one_attached :image
+	has_one_attached :testfile
 	validates :image, content_type: [:png, :jpg, :jpeg]
 
 end
