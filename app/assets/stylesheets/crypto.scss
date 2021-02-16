@@ -37,6 +37,7 @@
 	
 	background-color: #EAEAEA ;
 	border-radius: 10px;
+	
 
 }
 
@@ -47,12 +48,17 @@
     display: inline-block;
     text-align: center;
     width: 300px;
-
     margin-top: 30px;
     margin-bottom: 25px;
+    transition: transform .2s;
 
   
 }
+
+.crypto-images:hover {
+	transform: scale(1.05);
+}
+
 
 .crypto-images img {
 
@@ -60,8 +66,14 @@
 	height: 200px;
 	max-height: 220px;
 	border-radius: 10px;
+	
 
 
+}
+
+.crypto-images img:hover {
+
+	
 }
 
 strong.caption {
