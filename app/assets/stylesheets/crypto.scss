@@ -1,11 +1,42 @@
+.Crypto-currencies{
+
+
+ margin-left: 15%;
+ margin-top: 1%;
+
+
+}
+
+.Crypto {
+	
+	float: left;
+	display: inline-block;
+    margin-left: 4%;
+
+}
+
+
+#Crypto-price {
+	font-size: 15px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding-left: 5px;
+	border-radius: 5px;
+}
 
 
 
 .Crypto-container {
 
 	float: left;
-	height: 300px;
-	width: auto;
+	height: fill;
+	width: fill;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+	background-color: #EAEAEA ;
+	border-radius: 10px;
 
 }
 
@@ -17,7 +48,7 @@
     text-align: center;
     width: 300px;
 
-
+    margin-top: 30px;
     margin-bottom: 25px;
 
   
@@ -33,7 +64,8 @@
 
 }
 
-.caption {
+strong.caption {
+
 
 	display: block;
 	width: 300px;
@@ -45,8 +77,12 @@
 	padding: 2%;
 	margin-top: 2px;
 	border-radius: 5px;
-
+	text-decoration:none;
+	
 }
+
+
+
 
 .read-more {
 
@@ -60,6 +96,7 @@
 	text-align: left;
 	padding: 3px;
 	border-radius: 5px;
+	text-decoration:none;
 
 }
 
