@@ -1,6 +1,8 @@
 
 
-
+<div class="New-book-btn">
+  <%= link_to 'New Book +', new_book_path, class: "New-book-btn-link" %>
+</div>
 
 	
 <div class = "Books-container">
@@ -8,11 +10,6 @@
 
   <% if user_signed_in? %>
 
-  
-
-    <div class = "New-Book-btn">
-      <%= link_to 'New Book', new_book_path, class: "New-book-btn-link" %>
-    </div>
 
       <% @books.each do |book| %>
 
@@ -31,17 +28,17 @@
 
   <% end %>
 
- </div>
 
-<% else %>
+
+  <% else %>
 
   <h1>You need to log in to view the books</h1> <!--  THIS SHOULD BE A NOT LOGGED IN PAGE FOR BOOKS -->
 
-<% end %>
+  <% end %>
 
 
+</div>
 
 
-<br>
 
 

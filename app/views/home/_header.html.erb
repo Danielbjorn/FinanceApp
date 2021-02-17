@@ -4,30 +4,23 @@
 <!-- HEADER IS HERE (form partial _header.html.erb) -->
 
 
-<nav>
-
-
-  <div class="container-fluid">
-
+<nav class = "Head-container">
 
       <!----------------------------  THIS IS THE NAVBAR LIST  ------------------------------------------------------>	
-
-
-  
 
         <ul class = "Navbar-ul">
 
 
-          <li class = "Navbar-li" >
-            <%= link_to image_tag("mainlogo.png"),  root_path, class: "Navbar-logo" %> 
+          <li class = "Navbar-li">
+            <%= link_to image_tag("cryptologo.png"),  root_path, class: "Navbar-logo Navbar-li" %> 
           </li>
 
-          <li class = "Navbar-li" >
-            <%= link_to image_tag("cryptologo.png") , crypto_index_url, class: "Navbar-logo"  %> 
+          <li class = "Navbar-li">
+            <%= link_to 'Crypto', crypto_index_url, class: "Navbar-a"  %> 
           </li>
 
-          <li class = "Navbar-li" >
-            <%= link_to image_tag("Bookslogo.png") , books_path, class: "Navbar-logo"  %> 
+          <li class = "Navbar-li">
+            <%= link_to 'Books', books_path, class: "Navbar-a"   %> 
           </li>
 
          
@@ -48,22 +41,22 @@
           
 
             <li class = "Navbar-li-devise" >
-              <%= link_to image_tag("logout.png") ,destroy_user_session_path, method: :delete, class: "Navbar-devise-logo"  %> 
+              <%= link_to 'Sign out' ,destroy_user_session_path, method: :delete, class: "Navbar-devise-a"  %> 
             </li>
 
             <li class = "Navbar-li-devise" >
-              <%= link_to image_tag("editprofile.png"), edit_user_registration_path, class: "Navbar-devise-logo"  %> 
+              <%= link_to 'Edit profile', edit_user_registration_path, class: "Navbar-devise-a"  %> 
             </li>
 
       
           <% else %>
 
             <li class = "Navbar-li-devise" >
-              <%= link_to image_tag("signup.png"), new_user_registration_path, class: "Navbar-devise-logo"  %> 
+              <%= link_to 'Sign up', new_user_registration_path, class: "Navbar-devise-a"  %> 
             </li>
 
             <li class = "Navbar-li-devise" >
-              <%= link_to image_tag("signin.jpg"), new_user_session_path, class: "Navbar-devise-logo"  %> 
+              <%= link_to 'Sign in', new_user_session_path, class: "Navbar-devise-a"   %> 
             </li>
 
         <% end %>
@@ -71,10 +64,6 @@
         
 
       </ul>
-
-      
-
-      
   
       <!----------------------------  THIS IS THE NAVBAR SEARCH-BAR ------------------------------------------------------>
 
@@ -85,10 +74,6 @@
 
 
     <hr size="1">
-
-    </div>
-
-    
 
 </nav>
 

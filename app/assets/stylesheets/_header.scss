@@ -1,69 +1,109 @@
 
 
 
-.container-fluid {
+.Head-container {
 
-	position: relative;
-	font-size: 13px;
+	
+	font-size: 12px;
 	font-family: Arial, Helvetica, sans-serif;
   	font-weight: bold;
   	margin-top: 25px;
+  	list-style-type: none;
+  	text-decoration: none;
+
   	
-
-
 }
+
 
 .Navbar-ul  {
 
 	
 	height: 32px;
-	list-style-type: none;
-	overflow: hidden;
-
 	padding: 0;
-	margin: 0px 0px 0px;
+	margin: 0;
+	/*background-color: red;*/
+	margin-bottom: -10px;
+	margin-right: 10px;
+	
+	
+}	
 
-	
-	
 
-}
 
-.Navbar-li  {
+
+li.Navbar-li  {
 	
-	
+	display: block;  /*This shit makes the div a block (clickable)*/
+	height: 32px;
+	width: auto;
+	/*background-color: green;*/
 	float: left;
+
 	
+}
+
+
+.Navbar-a {
+
+	display: block;
+	height: 32px;
+	width: auto;
+	margin-left: 10px;
+	padding-top: 7px;
+	/*background-color: yellow;*/
+	text-decoration: none;
+	color: #8E8B8B ;
 
 }
+
+.Navbar-a:hover {
+
+	color: black;
+	font-weight: bold;
+
+
+
+}
+
+
+
 
 .Navbar-li-devise {
 	
+	display: block;  /*This shit makes the div a block (clickable)*/
+	height: 32px;
+	width: auto;
+	/*background-color: green;*/
 	float: right;
-	margin-right: 20px;
+	margin-right: 10px;
 
 }
 
-.Navbar-item {
-  
-  
-  
-  text-decoration: none;
-  display: block;
-  color: black;
-  padding-left: 15px;
-  
-  
+.Navbar-devise-a {
+
+	display: block;
+	height: 32px;
+	width: auto;
+	margin-right: 10px;
+	padding-top: 7px;
+	/*background-color: yellow;*/
+	text-decoration: none;
+	color: #8E8B8B ;
+
+}
+
+.Navbar-devise-a:hover {
+
+	color: black;
+	font-weight: bold;
 
 }
 
 
 hr {
 
-	height: 3px;
-	color: black;
-	background-color: #ccc;
-	border: none;
-	margin: 0px 0px;
+	height: 2px;
+	
 }
     
 

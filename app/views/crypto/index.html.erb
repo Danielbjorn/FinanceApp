@@ -4,23 +4,7 @@
 <% @prices["DISPLAY"] %>
 
 
-	<div class = "Crypto-currencies">
-		
-		<%  @prices["DISPLAY"].each do |key,value| %>
-
-			<div class = "Crypto">
-			<div id = "Crypto-price"> <%= key %> <%= value["USD"]["PRICE"]%><br> </div>
-
-			Change today: <%= value["USD"]["CHANGEPCTDAY"] %> % <br>
-			24h High: <%= value["USD"]["HIGHDAY"] %> <br>
-			24h Low: <%= value["USD"]["LOWDAY"] %> <br>
-			MarketCap: <%= value["USD"]["MKTCAP"] %> <br>
-			<br>
-			</div>
-
-		<% end %>
-
-	</div>
+	
 	
 	<div class = "Crypto-container">
 

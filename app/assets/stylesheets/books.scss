@@ -1,43 +1,19 @@
 
 
-.New-Book-btn {
-   
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: bold;
-   margin-top: -10px;
-   text-align: center;
-   position: relative;
-   height: 40px;
-   width: auto;
-   padding: 15px;
-   background-color: white;
-}
-
-.div.New-Book-btn:hover {
-   cursor: hand;
-   cursor: pointer;
-   opacity: .9;
-   text-decoration: none;
-}
-
-
-.New-book-btn-link {
-	color: black;
-	padding: 7.5px;
-	display: inline-block;
-	text-decoration: none;
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-
-
-}
 
 .Books-container {
-   margin-top: 2%;
-   margin-left: 2.5%;
+
+  width: 80%;
+  height: auto;
+
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+
+  position: relative;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 
    
 }
@@ -45,23 +21,74 @@
 .Book-image img {
 	
 	height: 300px;
-	width: auto;
+	display: inline-block;
 	float: left;
-   margin-left: 8px;
-   margin-bottom: 12px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 	padding: 2px;
-   border-radius: 18px;
-   border-size: 2px;
-   box-shadow: 0 3px 15px #878282 ;
-   transition: transform .2s;
-
+  border-radius: 18px;
+  border-size: 2px;
+  box-shadow: 0 3px 5px #878282 ;
+  transition: transform .2s;
 
 }
 
 .Book-image img:hover {
-   transform: scale(1.08);
+
+  transform: scale(1.08);
 
 }
+
+.New-book-btn {
+
+  background-color: #EAE9E8  ;
+  box-shadow: 0 3px 5px #878282 ;
+  
+
+  width: 200px;
+  height: 35px;
+
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+
+  position: relative;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+
+}
+
+.New-book-btn-link  {
+
+  text-decoration: none;
+  margin-top: 3px;
+  color: #8E8B8B ;
+
+}
+
+.New-book-btn-link:hover  {
+
+  color: black;
+  font-weight: 500;
+
+}
+
+
+
+
+
+
+/* SHOW PAGES IS BELOW*/
+
+
+
+
 
 .Book-image-show img {
 
