@@ -1,49 +1,41 @@
 
-<div class = "Edit-user">
+
+<h1 class = "Devise-head"> Edit Profile </h1> 
+
+<div class = "Devise-container">
   
 
- <h1>Edit <%= resource_name.to_s.humanize %></h1>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
   
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "E-mail / Username" %>
-  </div><br>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "E-mail / Username", class: "field-item" %> <br>
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
     <% end %>
-  </div><br>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field"><br>
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %><br><br>
-  </div>
+ 
+    <%= f.label 'New Password', class: "field-item" %>  <br>
+    <%= f.password_field :password, autocomplete: "new-password", class: "field-item" %> <br>
+    
+    <%= f.label :Password_Confirmation, class: "field-item" %> <br>
 
 
-  <div class="actions Update-user">
-    <%= f.submit "Update" %> <br><br>
-    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "Cancel-Account" %>
-  </div>
+    <%= f.password_field :Password_Confirmation, autocomplete: "new-password", class: "field-item" %><br>
+    <%= f.label :current_password, class: "field-item" %> <br />
+    <%= f.password_field :current_password, autocomplete: "current-password", class: "field-item" %><br>
+ 
+
+    <div class="actions Update-user">
+      <%= f.submit "Update", class: "field-item" %> <br><br>
+      <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "Cancel-Account", class: "field-item" %>
+    </div>
+
 <% end %>
 
 
-</div>
+  </div>
 
 
 
