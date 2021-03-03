@@ -1,4 +1,51 @@
 
+.Home-Container {
+
+	width: fill;
+	height: fill;
+	background-color: black;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.Card-1 {
+
+	background-color: #15181c;
+	width: 800px;
+	height: auto;
+}
 
 
+.Crypto-tokens {
 
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, 50%);
+	width: 600px;
+	line-height: 2;
+
+ 	
+
+ 	}	
+
+.Crypto-row {
+	color: white;
+}
+
+.Crypto-head {
+	color: grey;
+}
+
+
+.First-column {
+	padding-left: 5px;
+}
+
+.Last-column {
+
+	float: right;
+	padding-right: 5px;
+}
+
+tr:nth-child(odd) {background: black}

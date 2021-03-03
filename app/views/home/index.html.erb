@@ -1,4 +1,80 @@
 
 
 
+<div class = "Home-Container">
+
+			
+	<div class = "Card-1 Crypto-tokens">
+
+	
+		<table style="width:100%">
+		
+
+		  <tr class = "Crypto-row Crypto-head">
+		    <th class = "First-column">#</th>
+		    <th>NAME</th>
+		    <th>PRICE</th>
+		    <th>MCAP</th>
+		    <th class = "Last-column">24H</th>
+		  </tr>
+
+		  <tr class = "Crypto-row">
+		    <td class = "First-column">1</td>
+		    <td>Bitcoin</td>
+		    <td> <%= @prices ["DISPLAY"]["BTC"]["USD"]["PRICE"] %> </td>
+		    <td> <%= @prices ["DISPLAY"]["BTC"]["USD"]["MKTCAP"] %> </td>
+		    <td class = "Last-column"> <%= @prices ["DISPLAY"]["BTC"]["USD"]["CHANGEPCTDAY"] %> %</td>
+		  </tr>
+
+		   <tr class = "Crypto-row">
+		    <td class = "First-column">2</td>
+		    <td>Ethereum</td>
+		    <td> <%= @prices ["DISPLAY"]["ETH"]["USD"]["PRICE"] %> </td>
+		    <td> <%= @prices ["DISPLAY"]["ETH"]["USD"]["MKTCAP"] %> </td>
+		    <td class = "Last-column"> <%= @prices ["DISPLAY"]["ETH"]["USD"]["CHANGEPCTDAY"] %> %</td>
+		  </tr>
+
+
+		  <tr class = "Crypto-row">
+		    <td class = "First-column">3</td>
+		    <td>Cardano</td>
+		    <td> <%= @prices ["DISPLAY"]["ADA"]["USD"]["PRICE"] %> </td>
+		    <td> <%= @prices ["DISPLAY"]["ADA"]["USD"]["MKTCAP"] %> </td>
+		    <td class = "Last-column"> <%= @prices ["DISPLAY"]["ADA"]["USD"]["CHANGEPCTDAY"] %> %</td>
+		  </tr>
+
+		  <tr class = "Crypto-row">
+		    <td class = "First-column">4</td>
+		    <td>BNB</td>
+		    <td> <%= @prices ["DISPLAY"]["BNB"]["USD"]["PRICE"] %> </td>
+		    <td> <%= @prices ["DISPLAY"]["BNB"]["USD"]["MKTCAP"] %> </td>
+		    <td class = "Last-column"> <%= @prices ["DISPLAY"]["BNB"]["USD"]["CHANGEPCTDAY"] %> %</td>
+		  </tr>
+
+		  <tr class = "Crypto-row">
+		    <td class = "First-column">5</td>
+		    <td>THORChain</td>
+		    <td> <%= @prices ["DISPLAY"]["RUNE"]["USD"]["PRICE"] %> </td>
+		    <td> <%= @prices ["DISPLAY"]["RUNE"]["USD"]["MKTCAP"] %> </td>
+		    <td class = "Last-column"> <%= @prices ["DISPLAY"]["RUNE"]["USD"]["CHANGEPCTDAY"] %> %</td>
+		  </tr>
+
+		  <tr class = "Crypto-row">
+		    <td class = "First-column">6</td>
+		    <td>The Sandbox</td>
+		    <td> <%= @prices ["DISPLAY"]["SAND"]["USD"]["PRICE"] %> </td>
+		    <td> <%= @prices ["DISPLAY"]["SAND"]["USD"]["MKTCAP"] %> </td>
+		    <td class = "Last-column"> <%= @prices ["DISPLAY"]["SAND"]["USD"]["CHANGEPCTDAY"] %> %</td>
+		  </tr>
+
+		</table>
+		
+
+
+	</div>
+	
+	
+	
+
+</div>
 

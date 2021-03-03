@@ -15,13 +15,25 @@
             <%= link_to image_tag("cryptologo.png"),  root_path, class: "Navbar-logo Navbar-li" %> 
           </li>
 
-          <li class = "Navbar-li">
-            <%= link_to 'Crypto', crypto_index_url, class: "Navbar-a"  %> 
-          </li>
 
-          <li class = "Navbar-li">
-            <%= link_to 'Books', books_path, class: "Navbar-a"   %> 
-          </li>
+          <div class = "Navbar-links">
+            
+        
+            <li class = "Navbar-li ">
+              <%= link_to 'News', crypto_index_url, class: "Navbar-a"  %> 
+            </li>
+
+            <li class = "Navbar-li">
+              <%= link_to 'Books', books_path, class: "Navbar-a" %> 
+            </li>
+
+            <li class = "Navbar-li">
+              <%= link_to 'Research', root_path, class: "Navbar-a" %> 
+            </li>
+
+
+
+          </div>
 
          
           
@@ -73,7 +85,7 @@
       </form> -->
 
 
-    <hr size="1">
+    
 
 </nav>
 

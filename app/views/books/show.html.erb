@@ -1,45 +1,86 @@
 
+<div class = "Book-show-container">
+	
 
-<div class = "Book-image-show">
-	<%= image_tag @book.image %>
-</div>
+<div id= "Book-show-image"> <%= image_tag(@book.image) %></div>
+
+	
+<ul class="PDF-list">
+
+  
+
+  <% @book.pdf.each do |pdf| %>
+
+  	
+    <li>
+      <% if pdf.representable? %>
+        <%= image_tag pdf.representation(resize_to_limit: [100, 100]) %>
+      <% else %>
+        <%= link_to rails_blob_path(pdf, disposition: "attachment") do %>
+          <%= image_tag "pdflogo.jpg", alt: "Download file", id: "PDF-image" %>
+        <% end %>
+      <% end %>
+    </li>
+    <% @book.pdf.each do |pdf| %> 
+
+  <li><%= link_to @book.pdf %> </li> 
+
+ <% end %>
+  <% end %>
+</ul>
+
+ 
 
 
+<%= form_with(model: @book) do |form| %>
+
+  <% if @book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul class="PDF-list">
+        <% @book.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
 
-<div class = "Show-info">
+      <!--------------------------- Main fields----------------------------->   
 
-	<p>
-	  <strong>Title:</strong>
-	  <%= @book.title %>
-	</p>
 
-	<p>
-	  <strong>Author:</strong>
-	  <%= @book.author %>
-	</p>
+      <div class = "field form-group Choose-book"> 
+        <%= form.file_field :pdf, required: true %>
+      </div>
 
-	<p>
-	  <strong>Rating:</strong>
-	  <%= @book.rating %>
-	</p>
+      <div class="actions Update-book">
+        <%= form.submit %>
+      </div>
 
-	<p>
-	  <strong>Review:</strong>
-	  <%= @book.review %>
-	</p>
+<% end %>
+
+
 
 	
 
-</div>
+	  
+	  <%= @book.review %>
+	 
+
+
+	
 
 
 
-<div class = "Show-btns">
 
-	<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-dark" %> 
-	<%= link_to 'Back', books_path, class: "btn btn-dark"  %>
-	<%= link_to 'delete', @book, method: :delete, data: { comfirm: 'Are you sure' }, class: "btn btn-danger" %> 
+	<div class = "Show-btns">
+
+		<%= link_to 'Edit', edit_book_path(@book), class: "btn btn-dark" %> 
+		<%= link_to 'Back', books_path, class: "btn btn-dark"  %>
+		<%= link_to 'delete', @book, method: :delete, data: { comfirm: 'Are you sure' }, class: "btn btn-danger" %> 
 
 
+	</div>
+	
 </div>
