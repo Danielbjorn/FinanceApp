@@ -1,40 +1,46 @@
 
-.Devise-container, .Devise-head {
 
-	
-	width: 70%;
-	height: auto;
+.Devise-container{
 
+	position: absolute;
+    top: 70px; /* Header Height */
+    bottom: 0px; /* Footer Height */
+    width: 100%;
+	background-color: black;
+}
+
+
+
+.Card-devise {
+
+	width: 30%;
+	background-color: #15181c;
 	left: 50%;
-	top: 50%;
-  	-webkit-transform: translate(-50%, 50%);
   	transform: translate(-50%, 50%);
-
 	position: relative;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
-	
+
 
 }
+
+
 
 .Devise-head {
 
 	
-
-	width: 70%;
-	height: 50px;
-	margin-top: 200px;
+	background-color: green;
+	width: 305px;
+	height: 20px;
+	text-align: center;
 	font-size: 15px;
-	margin-bottom: -75px;
-	padding-top: 15px;
-	font-weight: 400;
+
 }
 
 
 .field {
 
-	
 	width: 400px;	
 	text-align: center;
 }
@@ -46,7 +52,6 @@
 	padding-left: 3px;
 
   	
-	
 
 }
 
@@ -56,6 +61,7 @@
 
 	margin-top: 15px;
 	font-size: 10px;
+	color: white;
 }
 
 
@@ -63,4 +69,5 @@
 
 	margin-top: 15px;
 	font-size: 10px;
+	color: white;
 }

@@ -1,41 +1,51 @@
 
-
-<h1 class = "Devise-head"> Edit Profile </h1> 
-
 <div class = "Devise-container">
   
 
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-  
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "E-mail / Username", class: "field-item" %> <br>
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-    <% end %>
 
- 
-    <%= f.label 'New Password', class: "field-item" %>  <br>
-    <%= f.password_field :password, autocomplete: "new-password", class: "field-item" %> <br>
+
+  <div class = "Card-devise">
     
-    <%= f.label :Password_Confirmation, class: "field-item" %> <br>
 
 
-    <%= f.password_field :Password_Confirmation, autocomplete: "new-password", class: "field-item" %><br>
-    <%= f.label :current_password, class: "field-item" %> <br />
-    <%= f.password_field :current_password, autocomplete: "current-password", class: "field-item" %><br>
- 
 
-    <div class="actions Update-user">
-      <%= f.submit "Update", class: "field-item" %> <br><br>
-      <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "Cancel-Account", class: "field-item" %>
-    </div>
+      <h1 class = "Devise-head"> Edit Profile </h1> 
+      
 
-<% end %>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field">
+      
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "E-mail / Username", class: "field-item" %> <br>
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+        <% end %>
+
+     
+        <%= f.label 'New Password', class: "field-item" %>  <br>
+        <%= f.password_field :password, autocomplete: "new-password", class: "field-item" %> <br>
+        
+        <%= f.label :Password_Confirmation, class: "field-item" %> <br>
+
+
+        <%= f.password_field :Password_Confirmation, autocomplete: "new-password", class: "field-item" %><br>
+        <%= f.label :current_password, class: "field-item" %> <br />
+        <%= f.password_field :current_password, autocomplete: "current-password", class: "field-item" %><br>
+     
+
+        <div class="actions Update-user">
+          <%= f.submit "Update", class: "field-item" %> <br><br>
+          <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "Cancel-Account", class: "field-item" %>
+        </div>
+
+      <% end %>
 
 
   </div>
+
+</div>
 
 
 

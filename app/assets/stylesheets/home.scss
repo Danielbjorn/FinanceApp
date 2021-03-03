@@ -1,8 +1,10 @@
 
 .Home-Container {
 
-	width: fill;
-	height: fill;
+	position: absolute;
+    top: 70px; /* Header Height */
+    bottom: 0px; /* Footer Height */
+    width: 100%;
 	background-color: black;
 	font-size: 12px;
 	font-weight: 500;
@@ -11,18 +13,20 @@
 .Card-1 {
 
 	background-color: #15181c;
-	width: 800px;
+	width: 25%;
 	height: auto;
 }
 
 
 .Crypto-tokens {
 
+	
+	display: inline-block;
 	position: relative;
+	width: 500px;
 	left: 50%;
-	top: 50%;
 	transform: translate(-50%, 50%);
-	width: 600px;
+	
 	line-height: 2;
 
  	

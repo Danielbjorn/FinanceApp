@@ -1,13 +1,18 @@
 
 .Books-outside-container {
 
-background-color: black;
+position: absolute;
+    top: 70px; /* Header Height */
+    bottom: 0px; /* Footer Height */
+    width: 100%;
+  background-color: black;
+
   
 }
 
 .Books-container, .Book-show-container  {
 
-  width: 80%;
+  width: 90%;
   height: auto;
 
   left: 50%;
@@ -25,7 +30,7 @@ background-color: black;
 
 .Book-image img {
 	
-	height: 300px;
+	height: 220px;
 	display: inline-block;
 	float: left;
   margin-left: 15px;
@@ -46,8 +51,8 @@ background-color: black;
 
 .New-book-btn {
 
-  background-color: #FBFBFA;
-  box-shadow: 0  4px 6px #878282 ;
+  background-color: #15181c;
+  box-shadow: 0px 2px 15px #5A5A5B ;
   
 
   width: 200px;
@@ -62,7 +67,7 @@ background-color: black;
   flex-wrap:wrap;
   justify-content:center;
 
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 40px;
 
 
